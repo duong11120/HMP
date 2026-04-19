@@ -1,6 +1,0 @@
-# Read performance tests of B operations
-read "perftest-B-test-all_subareas.txt"
-read "perftest-B-places_closest_to.txt"
-read "perftest-B-common_area.txt"
-read "perftest-B-ways-route-any.txt"
-

@@ -1,5 +1,0 @@
-# Read performance tests of C operations
-read "perftest-C-route_least_crossroads.txt"
-read "perftest-C-route_shortest_distance.txt"
-read "perftest-C-route_with_cycle.txt"
-read "perftest-C-route_with_cycle.txt"
