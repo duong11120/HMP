@@ -431,11 +431,11 @@ C:/Users/Joey/OneDrive/Desktop/HMP/mainwindow.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
  mdp:C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/HMP_autogen/moc_predefs.h
- mdp:C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.hh
+ mdp:C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.hh
  mdp:C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.hh
  mdp:C:/Users/Joey/OneDrive/Desktop/HMP/mainwindow.h
-C:/Users/Joey/OneDrive/Desktop/HMP/mainwindow.cc
- uic:ui_mainwindow.h
-C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.cc
+C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.cc
 C:/Users/Joey/OneDrive/Desktop/HMP/main.cpp
 C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.cc
+C:/Users/Joey/OneDrive/Desktop/HMP/mainwindow.cc
+ uic:ui_mainwindow.h

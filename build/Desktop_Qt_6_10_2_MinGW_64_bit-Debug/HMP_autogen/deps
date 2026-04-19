@@ -618,8 +618,8 @@ HMP_autogen/timestamp: \
 	C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/HMP_autogen/moc_predefs.h \
-	C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.cc \
-	C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.hh \
+	C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.cc \
+	C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.hh \
 	C:/Users/Joey/OneDrive/Desktop/HMP/main.cpp \
 	C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.cc \
 	C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.hh \

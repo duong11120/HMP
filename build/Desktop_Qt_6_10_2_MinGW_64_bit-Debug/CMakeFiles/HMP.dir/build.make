@@ -135,20 +135,20 @@ CMakeFiles/HMP.dir/mainprogram.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HMP.dir/mainprogram.cc.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Joey\OneDrive\Desktop\HMP\mainprogram.cc -o CMakeFiles\HMP.dir\mainprogram.cc.s
 
-CMakeFiles/HMP.dir/datastructure.cc.obj: CMakeFiles/HMP.dir/flags.make
-CMakeFiles/HMP.dir/datastructure.cc.obj: CMakeFiles/HMP.dir/includes_CXX.rsp
-CMakeFiles/HMP.dir/datastructure.cc.obj: C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.cc
-CMakeFiles/HMP.dir/datastructure.cc.obj: CMakeFiles/HMP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Joey\OneDrive\Desktop\HMP\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HMP.dir/datastructure.cc.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HMP.dir/datastructure.cc.obj -MF CMakeFiles\HMP.dir\datastructure.cc.obj.d -o CMakeFiles\HMP.dir\datastructure.cc.obj -c C:\Users\Joey\OneDrive\Desktop\HMP\datastructure.cc
+CMakeFiles/HMP.dir/datastructures.cc.obj: CMakeFiles/HMP.dir/flags.make
+CMakeFiles/HMP.dir/datastructures.cc.obj: CMakeFiles/HMP.dir/includes_CXX.rsp
+CMakeFiles/HMP.dir/datastructures.cc.obj: C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.cc
+CMakeFiles/HMP.dir/datastructures.cc.obj: CMakeFiles/HMP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Joey\OneDrive\Desktop\HMP\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HMP.dir/datastructures.cc.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HMP.dir/datastructures.cc.obj -MF CMakeFiles\HMP.dir\datastructures.cc.obj.d -o CMakeFiles\HMP.dir\datastructures.cc.obj -c C:\Users\Joey\OneDrive\Desktop\HMP\datastructures.cc
 
-CMakeFiles/HMP.dir/datastructure.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HMP.dir/datastructure.cc.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Joey\OneDrive\Desktop\HMP\datastructure.cc > CMakeFiles\HMP.dir\datastructure.cc.i
+CMakeFiles/HMP.dir/datastructures.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HMP.dir/datastructures.cc.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Joey\OneDrive\Desktop\HMP\datastructures.cc > CMakeFiles\HMP.dir\datastructures.cc.i
 
-CMakeFiles/HMP.dir/datastructure.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HMP.dir/datastructure.cc.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Joey\OneDrive\Desktop\HMP\datastructure.cc -o CMakeFiles\HMP.dir\datastructure.cc.s
+CMakeFiles/HMP.dir/datastructures.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HMP.dir/datastructures.cc.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Joey\OneDrive\Desktop\HMP\datastructures.cc -o CMakeFiles\HMP.dir\datastructures.cc.s
 
 # Object files for target HMP
 HMP_OBJECTS = \
@@ -156,7 +156,7 @@ HMP_OBJECTS = \
 "CMakeFiles/HMP.dir/main.cpp.obj" \
 "CMakeFiles/HMP.dir/mainwindow.cc.obj" \
 "CMakeFiles/HMP.dir/mainprogram.cc.obj" \
-"CMakeFiles/HMP.dir/datastructure.cc.obj"
+"CMakeFiles/HMP.dir/datastructures.cc.obj"
 
 # External object files for target HMP
 HMP_EXTERNAL_OBJECTS =
@@ -165,7 +165,7 @@ HMP.exe: CMakeFiles/HMP.dir/HMP_autogen/mocs_compilation.cpp.obj
 HMP.exe: CMakeFiles/HMP.dir/main.cpp.obj
 HMP.exe: CMakeFiles/HMP.dir/mainwindow.cc.obj
 HMP.exe: CMakeFiles/HMP.dir/mainprogram.cc.obj
-HMP.exe: CMakeFiles/HMP.dir/datastructure.cc.obj
+HMP.exe: CMakeFiles/HMP.dir/datastructures.cc.obj
 HMP.exe: CMakeFiles/HMP.dir/build.make
 HMP.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a
 HMP.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a

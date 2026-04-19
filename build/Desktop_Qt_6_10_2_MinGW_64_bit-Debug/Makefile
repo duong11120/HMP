@@ -178,29 +178,29 @@ HMP_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/HMP_autogen/mocs_compilation.cpp.s
 .PHONY : HMP_autogen/mocs_compilation.cpp.s
 
-datastructure.obj: datastructure.cc.obj
-.PHONY : datastructure.obj
+datastructures.obj: datastructures.cc.obj
+.PHONY : datastructures.obj
 
 # target to build an object file
-datastructure.cc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructure.cc.obj
-.PHONY : datastructure.cc.obj
+datastructures.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructures.cc.obj
+.PHONY : datastructures.cc.obj
 
-datastructure.i: datastructure.cc.i
-.PHONY : datastructure.i
+datastructures.i: datastructures.cc.i
+.PHONY : datastructures.i
 
 # target to preprocess a source file
-datastructure.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructure.cc.i
-.PHONY : datastructure.cc.i
+datastructures.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructures.cc.i
+.PHONY : datastructures.cc.i
 
-datastructure.s: datastructure.cc.s
-.PHONY : datastructure.s
+datastructures.s: datastructures.cc.s
+.PHONY : datastructures.s
 
 # target to generate assembly for a file
-datastructure.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructure.cc.s
-.PHONY : datastructure.cc.s
+datastructures.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HMP.dir\build.make CMakeFiles/HMP.dir/datastructures.cc.s
+.PHONY : datastructures.cc.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -288,9 +288,9 @@ help:
 	@echo ... HMP_autogen/mocs_compilation.obj
 	@echo ... HMP_autogen/mocs_compilation.i
 	@echo ... HMP_autogen/mocs_compilation.s
-	@echo ... datastructure.obj
-	@echo ... datastructure.i
-	@echo ... datastructure.s
+	@echo ... datastructures.obj
+	@echo ... datastructures.i
+	@echo ... datastructures.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

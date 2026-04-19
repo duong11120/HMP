@@ -19,8 +19,8 @@ qt_add_executable(HMP
     mainwindow.ui
     mainprogram.cc
     mainprogram.hh
-    datastructure.cc
-    datastructure.hh
+    datastructures.cc
+    datastructures.hh
 )
 
 set_target_properties(HMP PROPERTIES AUTOMOC ON)

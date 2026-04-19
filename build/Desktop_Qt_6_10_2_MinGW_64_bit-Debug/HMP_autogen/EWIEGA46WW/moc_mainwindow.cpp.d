@@ -429,5 +429,5 @@ C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/HM
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.hh \
+  C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.hh \
   C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.hh

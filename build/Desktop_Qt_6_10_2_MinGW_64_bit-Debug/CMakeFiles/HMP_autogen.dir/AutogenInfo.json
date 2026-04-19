@@ -401,7 +401,7 @@
 	"SETTINGS_FILE" : "C:/Users/Joey/OneDrive/Desktop/HMP/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/HMP_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/Users/Joey/OneDrive/Desktop/HMP/datastructure.cc", "MU", null ],
+		[ "C:/Users/Joey/OneDrive/Desktop/HMP/datastructures.cc", "MU", null ],
 		[ "C:/Users/Joey/OneDrive/Desktop/HMP/main.cpp", "MU", null ],
 		[ "C:/Users/Joey/OneDrive/Desktop/HMP/mainprogram.cc", "MU", null ],
 		[ "C:/Users/Joey/OneDrive/Desktop/HMP/mainwindow.cc", "MU", null ]

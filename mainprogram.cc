@@ -96,7 +96,7 @@ using std::numeric_limits;
 
 #include "mainprogram.hh"
 
-#include "datastructure.hh"
+#include "datastructures.hh"
 
 #ifdef GRAPHICAL_GUI
 #include "mainwindow.h"
