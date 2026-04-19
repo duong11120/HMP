@@ -1,7 +1,7 @@
 
 #include "mainprogram.hh"
 
-int main()
+int main(int argc, char* argv[])
 {
-    return MainProgram().main();
+    return MainProgram::mainprogram(argc, argv);
 }
