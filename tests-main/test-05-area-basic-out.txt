@@ -1,0 +1,49 @@
+> # Test basic area operations
+> clear_all
+Cleared everything.
+> all_areas
+No areas!
+> # Add areas
+> add_area 123456 'Sector7' (0,0) (1,1) (2,4)
+Area: Sector7: id=123456
+> add_area 654321 'Area9' (3,3) (3,6) (6,3)
+Area: Area9: id=654321
+> all_areas
+1. Sector7: id=123456
+2. Area9: id=654321
+> # Test getters
+> area_name 123456
+Area ID 123456 has name 'Sector7'
+Sector7: id=123456
+> area_coords 123456
+Area Sector7: id=123456 has coords:
+(0,0)
+(1,1)
+(2,4)
+
+Sector7: id=123456
+> area_name 654321
+Area ID 654321 has name 'Area9'
+Area9: id=654321
+> area_coords 654321
+Area Area9: id=654321 has coords:
+(3,3)
+(3,6)
+(6,3)
+
+Area9: id=654321
+> # Test non-existing
+> area_name 22
+Failed (NO_... returned)!!
+> area_coords 22
+Failed (NO_... returned)!!
+> # Clear all and test again
+> clear_all
+Cleared everything.
+> all_areas
+No areas!
+> area_name 123456
+Failed (NO_... returned)!!
+> area_coords 654321
+Failed (NO_... returned)!!
+> 

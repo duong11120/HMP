@@ -1,0 +1,36 @@
+# Test remove_way
+# Empty state
+clear_ways
+all_ways
+# Add ways
+add_way First (0,0) (10,0)
+add_way Second (10,0) (5,5) (10,10)
+add_way Third (10,10) (15,5) (15,0)
+add_way Loop (0,3) (3,5) (0,5) (0,3)
+all_ways
+# Test route
+route_any (0,0) (15,0)
+# Remove way
+remove_way Second
+all_ways
+# Test getters
+way_coords Second
+ways_from (10,0)
+ways_from (10,10)
+# Test route again
+route_any (0,0) (15,0)
+# Remove another way
+remove_way Third
+all_ways
+way_coords Third
+ways_from (10,10)
+ways_from (15,0)
+# Add a way again (different coords)
+add_way Third (10,0) (15,0)
+all_ways
+route_any (0,0) (15,0)
+# Remove a loop, test for the crossroad
+remove_way Loop
+all_ways
+way_coords Looop
+ways_from (0,3)

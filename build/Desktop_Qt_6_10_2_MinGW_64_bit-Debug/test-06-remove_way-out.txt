@@ -1,0 +1,93 @@
+> # Test remove_way
+> # Empty state
+> clear_ways
+All ways removed.
+> all_ways
+No ways!
+> # Add ways
+> add_way First (0,0) (10,0)
+Added way First with coords: (0,0) (10,0)
+1. (0,0) way First
+2. (10,0)
+> add_way Second (10,0) (5,5) (10,10)
+Added way Second with coords: (10,0) (5,5) (10,10)
+1. (10,0) way Second
+2. (10,10)
+> add_way Third (10,10) (15,5) (15,0)
+Added way Third with coords: (10,10) (15,5) (15,0)
+1. (10,10) way Third
+2. (15,0)
+> add_way Loop (0,3) (3,5) (0,5) (0,3)
+Added way Loop with coords: (0,3) (3,5) (0,5) (0,3)
+1. (0,3) way Loop
+2. (0,3)
+> all_ways
+1. First
+2. Loop
+3. Second
+4. Third
+> # Test route
+> route_any (0,0) (15,0)
+1. (0,0) way First distance 0
+2. (10,0) way Second distance 10
+3. (10,10) way Third distance 24
+4. (15,0) distance 36
+> # Remove way
+> remove_way Second
+Removed way Second
+> all_ways
+1. First
+2. Loop
+3. Third
+> # Test getters
+> way_coords Second
+Way Way id Second has coords:
+(--NO_COORD--)
+
+> ways_from (10,0)
+1. (0,0) way First 
+> ways_from (10,10)
+1. (15,0) way Third 
+> # Test route again
+> route_any (0,0) (15,0)
+No route found!
+> # Remove another way
+> remove_way Third
+Removed way Third
+> all_ways
+1. First
+2. Loop
+> way_coords Third
+Way Way id Third has coords:
+(--NO_COORD--)
+
+> ways_from (10,10)
+No ways from coord (10,10)
+> ways_from (15,0)
+No ways from coord (15,0)
+> # Add a way again (different coords)
+> add_way Third (10,0) (15,0)
+Added way Third with coords: (10,0) (15,0)
+1. (10,0) way Third
+2. (15,0)
+> all_ways
+1. First
+2. Loop
+3. Third
+> route_any (0,0) (15,0)
+1. (0,0) way First distance 0
+2. (10,0) way Third distance 10
+3. (15,0) distance 15
+> # Remove a loop, test for the crossroad
+> remove_way Loop
+Removed way Loop
+> all_ways
+1. First
+2. Third
+> way_coords Looop
+Way Way id Looop has coords:
+(--NO_COORD--)
+
+> ways_from (0,3)
+No ways from coord (0,3)
+> 

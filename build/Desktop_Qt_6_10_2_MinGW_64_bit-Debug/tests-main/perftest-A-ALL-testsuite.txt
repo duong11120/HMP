@@ -1,0 +1,6 @@
+# Read performance tests of A operations
+read "perftest-A-place.txt"
+read "perftest-A-sorting.txt"
+read "perftest-A-change.txt"
+read "perftest-A-find_places.txt"
+read "perftest-A-subareas.txt"

@@ -1,0 +1,69 @@
+> # Test common_area_of_subareas
+> clear_all
+Cleared everything.
+> all_areas
+No areas!
+> # Add areas and subarea relationships
+> add_area 0 'Root' (9,9) (10,10) (10,9)
+Area: Root: id=0
+> add_area 123456 'Sector7' (0,0) (1,1) (2,4)
+Area: Sector7: id=123456
+> add_area 654321 'Segment2' (6,6) (4,6) (6,4)
+Area: Segment2: id=654321
+> add_subarea_to_area 123456 0
+Added subarea Sector7 to area Root
+> add_subarea_to_area 654321 0
+Added subarea Segment2 to area Root
+> add_area 321 'Area9' (3,3) (3,6) (6,3)
+Area: Area9: id=321
+> add_area 123 'Region6' (2,2) (3,2) (3,3)
+Area: Region6: id=123
+> add_subarea_to_area 321 123456
+Added subarea Area9 to area Sector7
+> add_subarea_to_area 123 123456
+Added subarea Region6 to area Sector7
+> all_areas
+1. Root: id=0
+2. Region6: id=123
+3. Area9: id=321
+4. Sector7: id=123456
+5. Segment2: id=654321
+> # Test common_area_of_subareas
+> common_area_of_subareas 123456 654321
+The area 1. below is the common area of areas 2. and 3.
+1. Root: id=0
+2. Sector7: id=123456
+3. Segment2: id=654321
+> common_area_of_subareas 123456 321
+The area 1. below is the common area of areas 2. and 3.
+1. Root: id=0
+2. Sector7: id=123456
+3. Area9: id=321
+> common_area_of_subareas 123456 123
+The area 1. below is the common area of areas 2. and 3.
+1. Root: id=0
+2. Sector7: id=123456
+3. Region6: id=123
+> common_area_of_subareas 321 654321
+The area 1. below is the common area of areas 2. and 3.
+1. Root: id=0
+2. Area9: id=321
+3. Segment2: id=654321
+> common_area_of_subareas 123 654321
+The area 1. below is the common area of areas 2. and 3.
+1. Root: id=0
+2. Region6: id=123
+3. Segment2: id=654321
+> common_area_of_subareas 123 321
+The area 1. below is the common area of areas 2. and 3.
+1. Sector7: id=123456
+2. Region6: id=123
+3. Area9: id=321
+> # Test non-existing
+> common_area_of_subareas 123 56
+No common area found!
+> common_area_of_subareas 56 123
+No common area found!
+> common_area_of_subareas 56 57
+No common area found!
+> 

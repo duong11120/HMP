@@ -1,0 +1,24 @@
+clear_all
+read "example-areas.txt" silent
+all_subareas_in_area 123
+places_closest_to (0,0) firepit
+places_closest_to (10,0)
+add_area 999 'x' (8,3) (9,3) (8,4)
+add_subarea_to_area 999 99
+common_area_of_subareas 999 98
+common_area_of_subareas 98 78
+
+clear_ways
+all_ways
+read "example-ways.txt"
+all_ways
+way_coords Wd
+ways_from (3,7)
+route_any (3,7) (3,10)
+remove_way Wd
+way_coords Wd
+ways_from (3,7)
+route_any (3,7) (3,10)
+
+clear_all
+all_ways

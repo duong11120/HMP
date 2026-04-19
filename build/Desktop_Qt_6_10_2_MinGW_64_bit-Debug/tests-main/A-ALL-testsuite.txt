@@ -1,0 +1,16 @@
+testread "A-example-in.txt" "A-example-out.txt"
+
+testread "A-simpletest-in.txt" "A-simpletest-out.txt"
+
+testread "A-test-kintulammi-in.txt" "A-test-kintulammi-out.txt"
+
+testread "test-01-place-in.txt" "test-01-place-out.txt"
+
+testread "test-02-sorting-in.txt" "test-02-sorting-out.txt"
+
+testread "test-03-find-in.txt" "test-03-find-out.txt"
+
+testread "test-04-change-in.txt" "test-04-change-out.txt"
+
+testread "test-05-area-basic-in.txt" "test-05-area-basic-out.txt"
+

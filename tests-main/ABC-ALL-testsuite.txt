@@ -1,0 +1,15 @@
+testread "ABC-example-in.txt" "ABC-example-out.txt"
+
+testread "ABC-simpletest-in.txt" "ABC-simpletest-out.txt"
+
+testread "ABC-test-kintulammi-in.txt" "ABC-test-kintulammi-out.txt"
+
+testread "test-03-route_least_crossroads-in.txt" "test-03-route_least_crossroads-out.txt"
+
+testread "test-04-route_shortest_distance-in.txt" "test-04-route_shortest_distance-out.txt"
+
+testread "test-05-route_with_cycle-in.txt" "test-05-route_with_cycle-out.txt"
+
+testread "test-06-remove_way-in.txt" "test-06-remove_way-out.txt"
+
+

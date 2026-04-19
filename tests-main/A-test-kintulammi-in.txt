@@ -1,0 +1,16 @@
+clear_all
+place_count
+read "kintulammi-places.txt" silent
+read "kintulammi-areas.txt" silent
+place_count
+place_name_type 11960494
+place_coord 23860664
+places_coord_order
+find_places_name 'kirkkokivi'
+find_places_type firepit
+change_place_name 5604933167 'kirkkokiven laavu'
+find_places_name 'kirkkokivi'
+find_places_type firepit
+area_name 150817442
+subarea_in_areas 150817442
+quit

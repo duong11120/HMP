@@ -1,0 +1,48 @@
+> # Test subarea_in_areas
+> clear_all
+Cleared everything.
+> all_areas
+No areas!
+> # Add areas and subarea relationships
+> add_area 123456 'Sector7' (0,0) (1,1) (2,4)
+Area: Sector7: id=123456
+> add_area 654321 'Segment2' (6,6) (4,6) (6,4)
+Area: Segment2: id=654321
+> add_subarea_to_area 123456 654321
+Added subarea Sector7 to area Segment2
+> add_area 321 'Area9' (3,3) (3,6) (6,3)
+Area: Area9: id=321
+> add_area 123 'Region6' (2,2) (3,2) (3,3)
+Area: Region6: id=123
+> add_subarea_to_area 321 123456
+Added subarea Area9 to area Sector7
+> add_subarea_to_area 123 123456
+Added subarea Region6 to area Sector7
+> all_areas
+1. Region6: id=123
+2. Area9: id=321
+3. Sector7: id=123456
+4. Segment2: id=654321
+> # Test subarea_in_areas
+> subarea_in_areas 123456
+Area hierarchy for area Sector7: id=123456
+1. Sector7: id=123456
+2. Segment2: id=654321
+> subarea_in_areas 654321
+Area Segment2: id=654321is not a subarea of any area.
+> subarea_in_areas 321
+Area hierarchy for area Area9: id=321
+1. Area9: id=321
+2. Sector7: id=123456
+3. Segment2: id=654321
+> subarea_in_areas 123
+Area hierarchy for area Region6: id=123
+1. Region6: id=123
+2. Sector7: id=123456
+3. Segment2: id=654321
+> # Test non-existing
+> subarea_in_areas 56
+Area hierarchy for area !!NO_NAME!!: id=56
+1. !!NO_NAME!!: id=56
+2. --NO_AREA--
+> 

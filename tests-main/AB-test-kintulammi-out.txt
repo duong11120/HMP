@@ -1,0 +1,84 @@
+> read "A-test-kintulammi-in.txt" silent
+** Commands from 'A-test-kintulammi-in.txt'
+...(output discarded in silent mode)...
+** End of commands from 'A-test-kintulammi-in.txt'
+> all_subareas_in_area 11960494
+The area 1. below has areas 2.-... as subareas.
+1. kintulammin luonnonsuojelualue: id=11960494
+2. vattulan saastometsa: id=14540161
+3. kintulammi: id=17648849
+4. ruutana: id=17655722
+5. -: id=150817442
+6. -: id=150886707
+7. kaukaloinen: id=586662422
+> places_closest_to (300,300)
+1. kintulammin luonnonsuojelualue (area): pos=(303,319), id=11960494
+2. laukkisuo (other): pos=(259,336), id=9814232431
+3. ruutana (area): pos=(331,247), id=17655722
+> places_closest_to (300,300) shelter
+1. kintulammen laavu (shelter): pos=(229,302), id=2180429434
+2. kaukaloistenkallio (shelter): pos=(305,421), id=5604933009
+3. saarijarvi (shelter): pos=(269,161), id=5604933321
+> places_closest_to (300,300) firepit
+1. kinttulammi (firepit): pos=(228,302), id=9814041270
+2. kirkkokiven laavu (firepit): pos=(346,384), id=5604933167
+3. firepit (firepit): pos=(304,422), id=9817364055
+> common_area_of_subareas 150886708 150886706
+The area 1. below is the common area of areas 2. and 3.
+1. saarijarvi: id=26813637
+2. rajasaari: id=150886708
+3. -: id=150886706
+> common_area_of_subareas 150817442 17655722
+The area 1. below is the common area of areas 2. and 3.
+1. kintulammin luonnonsuojelualue: id=11960494
+2. -: id=150817442
+3. ruutana: id=17655722
+> 
+> find_places_name 'pulesjarvi'
+1. pulesjarvi (area): pos=(514,411), id=25211642
+2. pulesjarvi (area): pos=(368,532), id=25211650
+3. pulesjarvi (other): pos=(471,422), id=7012530993
+4. pulesjarvi (other): pos=(481,403), id=13285042283
+5. pulesjarvi (other): pos=(481,402), id=13285042284
+> remove_place 7012530993
+Place pulesjarvi(other) removed.
+> find_places_name 'pulesjarvi'
+1. pulesjarvi (area): pos=(514,411), id=25211642
+2. pulesjarvi (area): pos=(368,532), id=25211650
+3. pulesjarvi (other): pos=(481,403), id=13285042283
+4. pulesjarvi (other): pos=(481,402), id=13285042284
+> places_closest_to (471,422)
+1. pulesjarventie 852 (other): pos=(466,426), id=13285042280
+2. pulesjarventie 852 (other): pos=(467,427), id=13285042279
+3. pulesjarvi (other): pos=(481,403), id=13285042283
+> 
+> clear_ways
+All ways removed.
+> all_ways
+No ways!
+> # Read the ways
+> read "kintulammi-ways.txt" silent
+** Commands from 'kintulammi-ways.txt'
+...(output discarded in silent mode)...
+** End of commands from 'kintulammi-ways.txt'
+> 
+> # Information about ways
+> ways_from (479,248)
+1. (422,255) way 0x39 
+2. (493,225) way 0x3a 
+3. (453,319) way 0xb48e23d 
+> way_coords 0x3d
+Way Way id 0x3d has coords:
+(256,282)
+(257,282)
+(257,282)
+(258,282)
+
+> 
+> # Finding a route (a simple case so that there's only one choice)
+> route_any (540,517) (465,487)
+1. (540,517) way 0x124cec17 distance 0
+2. (462,528) way 0x6f distance 96
+3. (478,491) way 0x124cec19 distance 135
+4. (465,487) distance 148
+> quit

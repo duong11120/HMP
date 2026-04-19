@@ -1,0 +1,61 @@
+# VERY simple basic test for B commands
+# First read in the result of A-simpletest-in
+read "A-simpletest-in.txt" silent
+# Start testing B commands
+all_subareas_in_area 1
+all_subareas_in_area 2
+all_subareas_in_area 3
+places_closest_to (0,0)
+places_closest_to (0,0) shelter
+add_place 33333333 'Three' firepit (3,3)
+add_place 44444444 'Four' shelter (4,4)
+places_closest_to (0,0)
+places_closest_to (0,0) shelter
+add_area 4 'Area 4' (4,4) (3,4) (4,3)
+add_subarea_to_area 4 2
+common_area_of_subareas 3 4
+add_area 5 'Area 5' (1,8) (2,8) (1,9)
+common_area_of_subareas 5 4
+add_subarea_to_area 5 1
+common_area_of_subareas 5 4
+# Test ways
+clear_ways
+all_ways
+# Test with empty data
+way_coords xxxx
+ways_from (0,0)
+route_any (0,0) (1,1)
+# Add one way and test commands
+add_way Hori (0,0) (2,1) (5,0)
+way_coords Hori
+ways_from (0,0)
+ways_from (5,0)
+ways_from (2,1)
+route_any (0,0) (5,0)
+route_any (5,0) (0,0)
+# Test clearing, add way back
+clear_ways
+all_ways
+add_way Hori (0,0) (2,1) (5,0)
+clear_all
+all_ways
+add_way Hori (0,0) (2,1) (5,0)
+# Add another way, test more commands
+add_way Vert (0,5) (2,4) (0,0)
+way_coords Vert
+ways_from (0,0)
+ways_from (0,5)
+ways_from (5,0)
+route_any (0,0) (0,5)
+route_any (0,5) (0,0)
+# Test route with more than one way
+route_any (5,0) (0,5)
+route_any (0,5) (5,0)
+# Test removing a way
+# Remove one way and test route_any
+remove_way Hori
+route_any (0,0) (5,0)
+route_any (0,0) (0,5)
+route_any (5,0) (0,0)
+route_any (5,0) (0,5)
+quit

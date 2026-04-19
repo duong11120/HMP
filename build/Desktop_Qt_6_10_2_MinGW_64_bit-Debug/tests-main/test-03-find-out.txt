@@ -1,0 +1,43 @@
+> # Test find commands
+> clear_all
+Cleared everything.
+> place_count
+Number of places: 0
+> # Find from empty
+> find_places_name 'Park'
+No Places!
+> find_places_type firepit
+No Places!
+> # Add places
+> add_place 123456789 'Fire' firepit (11,22)
+Fire (firepit): pos=(11,22), id=123456789
+> add_place 987654321 'Shelter' shelter (22,11)
+Shelter (shelter): pos=(22,11), id=987654321
+> add_place 33 'Park' parking (3,3)
+Park (parking): pos=(3,3), id=33
+> add_place 66 'Bay' bay (50,0)
+Bay (bay): pos=(50,0), id=66
+> place_count
+Number of places: 4
+> # Find places
+> find_places_name 'Park'
+Park (parking): pos=(3,3), id=33
+> find_places_type firepit
+Fire (firepit): pos=(11,22), id=123456789
+> # Find when places with the same name and type
+> add_place 22222 'Shelter' firepit (2,1)
+Shelter (firepit): pos=(2,1), id=22222
+> find_places_name 'Shelter'
+1. Shelter (firepit): pos=(2,1), id=22222
+2. Shelter (shelter): pos=(22,11), id=987654321
+> find_places_type firepit
+1. Shelter (firepit): pos=(2,1), id=22222
+2. Fire (firepit): pos=(11,22), id=123456789
+> # Empty and try again
+> clear_all
+Cleared everything.
+> find_places_name 'Park'
+No Places!
+> find_places_type firepit
+No Places!
+> 

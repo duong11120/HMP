@@ -1,0 +1,28 @@
+# Test adding ways and getting basic info
+# Empty state
+clear_ways
+all_ways
+# Add ways
+add_way First (0,0) (10,0)
+all_ways
+add_way Second (10,0) (5,5) (10,10)
+all_ways
+# Test getters
+way_coords First
+way_coords Second
+ways_from (0,0)
+ways_from (10,0)
+ways_from (10,10)
+# Test a loop
+add_way Loop (0,3) (3,5) (0,5) (0,3)
+ways_from (0,3)
+# Test invalid getters
+way_coords None
+ways_from (0,10)
+ways_from (5,5)
+# Clear and test
+clear_ways
+all_ways
+# Test a now removed way and crossroad
+way_coords First
+ways_from (0,0)

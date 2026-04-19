@@ -1,0 +1,83 @@
+> # Test route_shortest_distance
+> clear_ways
+All ways removed.
+> all_ways
+No ways!
+> # Add ways
+> add_way First (0,0) (10,0)
+Added way First with coords: (0,0) (10,0)
+1. (0,0) way First
+2. (10,0)
+> add_way Second (10,0) (5,5) (10,10)
+Added way Second with coords: (10,0) (5,5) (10,10)
+1. (10,0) way Second
+2. (10,10)
+> # Test basic routing
+> route_shortest_distance (0,0) (10,0)
+1. (0,0) way First distance 0
+2. (10,0) distance 10
+> route_shortest_distance (10,0) (10,10)
+1. (10,0) way Second distance 0
+2. (10,10) distance 14
+> route_shortest_distance (0,0) (10,10)
+1. (0,0) way First distance 0
+2. (10,0) way Second distance 10
+3. (10,10) distance 24
+> route_shortest_distance (10,0) (0,0)
+1. (10,0) way First distance 0
+2. (0,0) distance 10
+> route_shortest_distance (10,10) (0,0)
+1. (10,10) way Second distance 0
+2. (10,0) way First distance 14
+3. (0,0) distance 24
+> # Test zero route
+> route_shortest_distance (10,0) (10,0)
+1. (10,0) distance 0
+> # Test non-existing crossroad
+> route_shortest_distance (1,1) (0,0)
+Starting or destination coord has no ways!
+> route_shortest_distance (0,0) (1,1)
+Starting or destination coord has no ways!
+> # Test a loop
+> add_way Loop (0,3) (3,5) (0,5) (0,3)
+Added way Loop with coords: (0,3) (3,5) (0,5) (0,3)
+1. (0,3) way Loop
+2. (0,3)
+> route_shortest_distance (0,3) (0,3)
+1. (0,3) distance 0
+> # Test a T-crossing
+> add_way Third (10,0) (10,7) (18,0) (15,5)
+Added way Third with coords: (10,0) (10,7) (18,0) (15,5)
+1. (10,0) way Third
+2. (15,5)
+> route_shortest_distance (0,0) (10,10)
+1. (0,0) way First distance 0
+2. (10,0) way Second distance 10
+3. (10,10) distance 24
+> route_shortest_distance (15,5) (0,0)
+1. (15,5) way Third distance 0
+2. (10,0) way First distance 22
+3. (0,0) distance 32
+> route_shortest_distance (10,10) (15,5)
+1. (10,10) way Second distance 0
+2. (10,0) way Third distance 14
+3. (15,5) distance 36
+> route_shortest_distance (15,5) (10,10)
+1. (15,5) way Third distance 0
+2. (10,0) way Second distance 22
+3. (10,10) distance 36
+> # Add a loop and test
+> add_way Fourth (15,5) (10,10)
+Added way Fourth with coords: (15,5) (10,10)
+1. (15,5) way Fourth
+2. (10,10)
+> route_shortest_distance (0,0) (15,5)
+1. (0,0) way First distance 0
+2. (10,0) way Second distance 10
+3. (10,10) way Fourth distance 24
+4. (15,5) distance 31
+> route_shortest_distance (15,5) (10,0)
+1. (15,5) way Fourth distance 0
+2. (10,10) way Second distance 7
+3. (10,0) distance 21
+> 

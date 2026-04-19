@@ -1,0 +1,47 @@
+> # Simple test for C commands
+> # Read A+B tests
+> read "AB-simpletest-in.txt" silent
+** Commands from 'AB-simpletest-in.txt'
+...(output discarded in silent mode)...
+** End of commands from 'AB-simpletest-in.txt'
+> # Add more ways and test other routes
+> add_way Hori (0,0) (2,1) (5,0)
+Added way Hori with coords: (0,0) (2,1) (5,0)
+1. (0,0) way Hori
+2. (5,0)
+> add_way Short (5,0) (7,0)
+Added way Short with coords: (5,0) (7,0)
+1. (5,0) way Short
+2. (7,0)
+> add_way Up (7,2) (7,0)
+Added way Up with coords: (7,2) (7,0)
+1. (7,2) way Up
+2. (7,0)
+> add_way Zig (0,5) (2,7) (4,3) (6,7) (7,2)
+Added way Zig with coords: (0,5) (2,7) (4,3) (6,7) (7,2)
+1. (0,5) way Zig
+2. (7,2)
+> route_least_crossroads (0,0) (7,2)
+1. (0,0) way Vert distance 0
+2. (0,5) way Zig distance 6
+3. (7,2) distance 21
+> route_shortest_distance (0,0) (7,2)
+1. (0,0) way Hori distance 0
+2. (5,0) way Short distance 5
+3. (7,0) way Up distance 7
+4. (7,2) distance 9
+> route_with_cycle (0,0)
+1. (0,0) way Hori
+2. (5,0) way Short
+3. (7,0) way Up
+4. (7,2) way Zig
+5. (0,5) way Vert
+6. (0,0)
+> trim_ways
+The remaining ways have a total length of 15
+> all_ways
+1. Hori
+2. Short
+3. Up
+4. Vert
+> quit

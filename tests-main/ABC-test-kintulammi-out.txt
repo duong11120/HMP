@@ -1,0 +1,86 @@
+> read "AB-test-kintulammi-in.txt" silent
+** Commands from 'AB-test-kintulammi-in.txt'
+...(output discarded in silent mode)...
+** End of commands from 'AB-test-kintulammi-in.txt'
+> # Test a route with the least crossroads
+> route_least_crossroads (557,242) (420,552)
+1. (557,242) way 0x14 distance 0
+2. (557,296) way 0x15 distance 55
+3. (552,309) way 0x16 distance 68
+4. (524,337) way 0x174935d distance 107
+5. (517,348) way 0xd4 distance 120
+6. (508,362) way 0xd5 distance 136
+7. (501,372) way 0xd6 distance 147
+8. (494,383) way 0xd7 distance 160
+9. (485,398) way 0xd8 distance 177
+10. (466,428) way 0xd9 distance 212
+11. (465,429) way 0xda distance 213
+12. (459,438) way 0xdb distance 223
+13. (448,447) way 0xdc distance 237
+14. (419,482) way 0x3ef7a136 distance 280
+15. (421,491) way 0x2d5059cb distance 289
+16. (422,492) way 0xd1 distance 290
+17. (424,496) way 0xd2 distance 294
+18. (427,501) way 0xd3 distance 299
+19. (423,524) way 0x3ef7a135 distance 322
+20. (420,552) distance 350
+> route_least_crossroads (264,322) (371,338)
+1. (264,322) way 0x2a452033 distance 0
+2. (268,336) way 0x2a452034 distance 14
+3. (270,351) way 0x4518b2a7 distance 29
+4. (282,355) way 0x2a42c555 distance 42
+5. (286,362) way 0x8f distance 49
+6. (366,362) way 0x7a distance 130
+7. (369,360) way 0x53 distance 133
+8. (371,342) way 0x52 distance 151
+9. (371,338) distance 155
+> 
+> # Test the shortest route (from the same coordinates as the last command above!)
+> route_shortest_distance (264,322) (371,338)
+1. (264,322) way 0x22f7b621 distance 0
+2. (267,311) way 0x2a4e62d8 distance 12
+3. (271,313) way 0x2a4e62da distance 16
+4. (272,314) way 0x2a4e62db distance 17
+5. (278,317) way 0x2a4e62dd distance 23
+6. (286,317) way 0xb6 distance 31
+7. (287,317) way 0x2a4e62df distance 32
+8. (297,324) way 0x2a4e62e9 distance 43
+9. (299,326) way 0x2a4e62ea distance 46
+10. (300,326) way 0x2a4e62e8 distance 47
+11. (303,326) way 0x4f389fea distance 50
+12. (306,326) way 0x2a4e62e7 distance 53
+13. (315,323) way 0x2a4e62e6 distance 62
+14. (317,322) way 0x2a4e62e5 distance 64
+15. (332,323) way 0x2a4e62e4 distance 79
+16. (334,324) way 0xb9 distance 81
+17. (335,324) way 0x2a4e62e2 distance 82
+18. (336,325) way 0xb7 distance 83
+19. (360,330) way 0xb8 distance 107
+20. (362,329) way 0x4518b2a6 distance 109
+21. (363,329) way 0x51 distance 110
+22. (371,338) distance 124
+> 
+> ways_from (194,119)
+1. (194,117) way 0x1c 
+2. (221,165) way 0x1d 
+3. (189,130) way 0x2da97189 
+> # Remove a way to isolate part of the map
+> remove_way 0x1d
+Removed way 0x1d
+> 
+> # The command below shouldn't find any cycles
+> route_with_cycle (53,254)
+No route found!
+> # If you haven't implemented remove_way above, the command below may found other cycles
+> route_with_cycle (182,42)
+1. (182,42) way 0x29784c5
+2. (232,19) way 0x18
+3. (209,56) way 0x19
+4. (208,89) way 0x1a
+5. (207,91) way 0xc4
+6. (207,88) way 0x3348ae73
+7. (206,88) way 0xc6
+8. (210,84) way 0xc5
+9. (207,88)
+> 
+> quit
